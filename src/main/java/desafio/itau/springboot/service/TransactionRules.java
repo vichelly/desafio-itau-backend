@@ -32,9 +32,9 @@ public class TransactionRules {
     /* t -> t.getDateTime().isAfter(now.minusSeconds(60)): Esta é uma expressão lambda que define a condição do filtro.  */
     public DoubleSummaryStatistics getStatistics(){
         OffsetDateTime now = OffsetDateTime.now();
-        return transactions.stream().filter(
+        return transactions.stream()/* .filter(
             t -> t.getDateTime().isAfter(now.minusSeconds(60))
-        ).mapToDouble(Transaction::getValue).summaryStatistics();
+        ) */.mapToDouble(Transaction::getValue).summaryStatistics();
     }
 
 }

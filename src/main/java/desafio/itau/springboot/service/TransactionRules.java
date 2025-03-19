@@ -1,6 +1,6 @@
 package desafio.itau.springboot.service;
 
-import java.time.OffsetDateTime;
+/* import java.time.OffsetDateTime; */
 import java.util.DoubleSummaryStatistics;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -31,7 +31,7 @@ public class TransactionRules {
     /* .filter(): Aplica um filtro ao fluxo, mantendo apenas os elementos que satisfazem uma determinada condição. */
     /* t -> t.getDateTime().isAfter(now.minusSeconds(60)): Esta é uma expressão lambda que define a condição do filtro.  */
     public DoubleSummaryStatistics getStatistics(){
-        OffsetDateTime now = OffsetDateTime.now();
+        /* OffsetDateTime now = OffsetDateTime.now(); */
         return transactions.stream()/* .filter(
             t -> t.getDateTime().isAfter(now.minusSeconds(60))
         ) */.mapToDouble(Transaction::getValue).summaryStatistics();

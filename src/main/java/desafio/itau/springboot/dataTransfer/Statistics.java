@@ -10,6 +10,7 @@ public class Statistics {
     private double min;
     private double max;
 
+    /* DoubleSummaryStatistics é uma classe que fornece estatisticas resumidas sobre uma sequencia de valores */
     public Statistics(DoubleSummaryStatistics stats){
         this.count = stats.getCount();
         this.sum = stats.getSum();

@@ -2,7 +2,7 @@
 
 # Itaú Unibanco - Desafio de Programação
 
-##endpoints usados
+## endpoints usados
 
 pos /transactions
 
